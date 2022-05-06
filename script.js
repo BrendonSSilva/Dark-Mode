@@ -112,21 +112,19 @@ function darkModeActive(){
 }
 function darkModeOn(){
         document.querySelector('input').value = 'Light mode'
-        document.querySelector('body').style.backgroundColor = '#000'
+        document.querySelector('body').classList.add('darkB')
         //para as questoes
-        document.querySelector('.question').style.color = '#fff'
-        document.querySelector('footer, a').style.color = '#fff'
-        document.querySelector('footer a').style.color = '#fff'
+        document.querySelector('.question').classList.add('darkC')
+        document.querySelector('footer').classList.add('darkC')
+        document.querySelector('footer a').classList.add('darkC')
         document.querySelector('.progress').style.backgroundColor = '#000'
-        document.querySelector('.darkButton').style.backgroundColor = '#333'
 }
 function darkModeOff() {
     document.querySelector('input').value = 'Dark mode'
-    document.querySelector('body').style.backgroundColor = '#fff'
+    document.querySelector('body').classList.remove('darkB')
     //para as questoes
-    document.querySelector('.question').style.color = '#000'
-    document.querySelector('footer, a').style.color = '#000'
-    document.querySelector('footer a').style.color = '#000'
+    document.querySelector('.question').classList.remove('darkC')
+    document.querySelector('footer, a').classList.remove('darkC')
+    document.querySelector('footer a').classList.remove('darkC')
     document.querySelector('.progress').style.backgroundColor = '#e9ecef'
-    document.querySelector('.darkButton').style.backgroundColor = '#111'
 }
