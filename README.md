@@ -3,4 +3,5 @@
 Projeto de criação de tema escuro
 
 # Imagens do projeto
-<img src="images/print1">
+<img src="images/img1.png"> <br>
+<img src="images/img2.png">
